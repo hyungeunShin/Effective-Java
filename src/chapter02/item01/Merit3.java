@@ -21,7 +21,7 @@ public class Merit3 {
         public static Shape newShape(String type) {
             if(type.equals("circle")) {
                 return new Circle();
-            } else if (type.equals("rectangle")) {
+            } else if(type.equals("rectangle")) {
                 return new Rectangle();
             }
 
