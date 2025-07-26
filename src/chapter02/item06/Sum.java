@@ -1,4 +1,4 @@
-package chapter02.item6;
+package chapter02.item06;
 
 //6-3
 //끔찍이 느리다! 객체가 만들어지는 위치를 찾았는가?

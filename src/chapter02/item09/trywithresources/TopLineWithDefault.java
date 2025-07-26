@@ -1,4 +1,4 @@
-package chapter02.item9.trywithresources;
+package chapter02.item09.trywithresources;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

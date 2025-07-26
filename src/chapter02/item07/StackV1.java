@@ -1,4 +1,4 @@
-package chapter02.item7;
+package chapter02.item07;
 
 import java.util.Arrays;
 import java.util.List;

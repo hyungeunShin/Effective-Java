@@ -1,4 +1,4 @@
-package chapter02.item9.tryfinally;
+package chapter02.item09.tryfinally;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
