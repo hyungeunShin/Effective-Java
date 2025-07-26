@@ -5,6 +5,9 @@ import chapter02.item05.Lexicon;
 
 import java.util.List;
 
+//5-2
+//싱글턴을 잘못 사용한 예 - 유연하지 않고 테스트하기 어렵다
+//28P
 public class SpellChecker {
     private final Lexicon dictionary = new KoreanDictionary();
 
