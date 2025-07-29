@@ -15,3 +15,9 @@
 - Item10. equals는 일반 규약을 지켜 재정의하라
 - Item11. equals를 재정의하려거든 hashCode도 재정의하라
 - Item12. toString을 항상 재정의하라
+- Item13. clone 재정의는 주의해서 진행하라
+- Item14. Comparable을 구현할지 고려하라
+
+### Chapter04. 클래스와 인터페이스
+- Item15. 클래스와 멤버의 접근 권한을 최소화하라
+- Item16. public 클래스에서는 public 필드가 아닌 접근자 메서드를 사용하라
