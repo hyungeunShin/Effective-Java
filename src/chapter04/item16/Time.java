@@ -1,0 +1,25 @@
+package chapter04.item16;
+
+//16-3
+//불변 필드를 노출한 public 클래스 - 과연 좋은가? --> 직접 노출할 때의 단점이 조금은 줄어들지만, 여전히 좋은 생각이 아니다.
+//103P ~ 104P
+public final class Time {
+    private static final int HOURS_PER_DAY    = 24;
+    private static final int MINUTES_PER_HOUR = 60;
+
+    public final int hour;
+    public final int minute;
+
+    public Time(int hour, int minute) {
+        if(hour < 0 || hour >= HOURS_PER_DAY) {
+            throw new IllegalArgumentException("Hour: " + hour);
+        }
+
+        if(minute < 0 || minute >= MINUTES_PER_HOUR) {
+            throw new IllegalArgumentException("Min: " + minute);
+        }
+
+        this.hour = hour;
+        this.minute = minute;
+    }
+}
