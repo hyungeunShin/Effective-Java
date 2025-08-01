@@ -31,7 +31,7 @@ public class ColorPointV1 extends Point {
         }
 
         //o가 일반 Point면 색상을 무시하고 비교한다.
-        if (!(o instanceof ColorPointV1)) {
+        if(!(o instanceof ColorPointV1)) {
             return o.equals(this);
         }
 
