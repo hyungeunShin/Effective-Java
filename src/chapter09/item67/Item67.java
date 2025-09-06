@@ -1,6 +1,6 @@
-package chapter09.item67
+package chapter09.item67;
 
-class Item67 {
+public class Item67 {
     /*
     (맹목적인 어리석음을 포함해) 그 어떤 핑계보다 효율성이라는 이름 아래 행해진 컴퓨팅 죄악이 더 많다. - 윌리엄 울프
     자그마한 효율성은 모두 잊자. 섣부른 최적화가 만악의 근원이다. - 도널드 크누스
