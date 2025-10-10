@@ -19,8 +19,4 @@ public class ElvisStealer implements Serializable {
     }
 
     private static final long serialVersionUID = 0;
-
-    public void setPayload(ElvisV1 payload) {
-        this.payload = payload;
-    }
 }

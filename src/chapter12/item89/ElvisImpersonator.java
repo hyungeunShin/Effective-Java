@@ -6,6 +6,7 @@ import chapter12.Util;
 //직렬화 허점을 이용해 싱글턴 객체를 2개 생성한다.
 //476P ~ 477P
 public class ElvisImpersonator {
+    //진짜 Elvis 인스턴스로는 만들어질 수 없는 바이트 스트림
     private static final byte[] serializedForm = {
             (byte)0xac, (byte)0xed, 0x00, 0x05, 0x73, 0x72, 0x00, 0x05,
             0x45, 0x6c, 0x76, 0x69, 0x73, (byte)0x84, (byte)0xe6,
@@ -22,7 +23,8 @@ public class ElvisImpersonator {
             0x78, 0x70, 0x71, 0x00, 0x7e, 0x00, 0x02
     };
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
+        //ElvisStealer.impersonator를 초기화한 다음, 진짜 Elvis(즉, Elvis.INSTANCE)를 반환한다.
         ElvisV1 elvisV1 = (ElvisV1) Util.deserialize(serializedForm);
         ElvisV1 impersonator = ElvisStealer.impersonator;
 
