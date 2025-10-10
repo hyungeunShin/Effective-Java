@@ -8,11 +8,11 @@ import java.io.ObjectOutputStream;
 
 public class Util {
     public static byte[] serialize(Object o) {
-        try(ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            ObjectOutputStream oos = new ObjectOutputStream(baos)) {
+        try(ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            ObjectOutputStream oos = new ObjectOutputStream(bos)) {
 
             oos.writeObject(o);
-            return baos.toByteArray();
+            return bos.toByteArray();
         } catch(IOException e) {
             throw new IllegalArgumentException(e);
         }
